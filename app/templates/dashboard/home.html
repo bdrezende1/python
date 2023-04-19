@@ -54,15 +54,15 @@
     </table>
 </div>
 
-<div class="pagination col-8 m-auto pt-2 pb-2 text-center">
+<div class="pagination col-8 m-auto pt-2 pb-2">
     {% if db.has_previous %}
-        <a href="/dashboard/?page={{db.previous_page_number}}" class="btn btn-dark btn-lg active mt-4" > anterior </a>
+        <a href="/dashboard/?page={{db.previous_page_number}}" class="btn btn-dark btn-lg active mt-0" > < </a>
     {% endif %}
 
-    <h1 class="btn btn-outline-success btn-lg active mt-4">{{db.number}}</h1>
+    <h1 class="btn btn-outline-success btn-lg active mt-0">{{db.number}}ª página</h1>
 
     {% if db.has_next %}
-        <a href="/dashboard/?page={{db.next_page_number}}" class="btn btn-dark btn-lg active mt-4"> próxima </a>
+        <a href="/dashboard/?page={{db.next_page_number}}" class="btn btn-dark btn-lg active mt-0"> > </a>
     {% endif %}
 </div>
 
